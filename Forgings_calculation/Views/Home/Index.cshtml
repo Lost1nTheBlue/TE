@@ -1,0 +1,23 @@
+﻿@model DataModel
+@{
+    ViewData["Title"] = "Размеры детали";
+}
+
+<h1>Введите размеры детали</h1>
+
+<!--<form method="post" asp-controller="Result" asp-action="Result">-->
+<form method="post" asp-controller="Result">
+    <label asp-for="Diameter"></label>
+    <input asp-for="Diameter" />
+    <span asp-validation-for="Diameter"></span>
+
+    <label asp-for="Hole_Diameter"></label>
+    <input asp-for="Hole_Diameter" />
+    <span asp-validation-for="Hole_Diameter"></span>
+
+    <label asp-for="Height"></label>
+    <input asp-for="Height" />
+    <span asp-validation-for="Height"></span>
+
+    <input type="submit" value="Рассчитать" />
+</form>
