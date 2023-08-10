@@ -6,7 +6,8 @@
 <h1>Введите размеры детали</h1>
 
 <!--<form method="post" asp-controller="Result" asp-action="Result">-->
-<form method="post" asp-controller="Result">
+<form method="post" asp-controller="Home" asp-action="Result">
+    
     <label asp-for="Diameter"></label>
     <input asp-for="Diameter" />
     <span asp-validation-for="Diameter"></span>
@@ -18,6 +19,34 @@
     <label asp-for="Height"></label>
     <input asp-for="Height" />
     <span asp-validation-for="Height"></span>
+
+    <label asp-for="Amount_Det"></label>
+    <input asp-for="Amount_Det" />
+    <span asp-validation-for="Amount_Det"></span>
+
+    <label asp-for="Length_Slice"></label>
+    <input asp-for="Length_Slice" />
+    <span asp-validation-for="Length_Slice"></span>
+
+    <label asp-for="Amount_Slice"></label>
+    <input asp-for="Amount_Slice" />
+    <span asp-validation-for="Amount_Slice"></span>
+
+    <label asp-for="Allowance_For_Content"></label>
+    <input asp-for="Allowance_For_Content" />
+    <span asp-validation-for="Allowance_For_Content"></span>
+
+    <label asp-for="Allowance_For_SizeH"></label>
+    <input asp-for="Allowance_For_SizeH" />
+    <span asp-validation-for="Allowance_For_SizeH"></span>
+
+    <label asp-for="Allowance_For_SizeD"></label>
+    <input asp-for="Allowance_For_SizeD" />
+    <span asp-validation-for="Allowance_For_SizeD"></span>
+
+    <label asp-for="Allowance_For_SizeDh"></label>
+    <input asp-for="Allowance_For_SizeDh" />
+    <span asp-validation-for="Allowance_For_SizeDh"></span>
 
     <input type="submit" value="Рассчитать" />
 </form>

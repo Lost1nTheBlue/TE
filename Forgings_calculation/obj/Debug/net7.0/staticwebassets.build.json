@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OIMdUfXLxsRV+8dV3chKFzkaoy0dNmBOG1dzambFjtM=",
+  "Hash": "1eVHSka6PDmJfxTVCb0GSMp4D3PjnAD4gzKemoU+Xxo=",
   "Source": "Forgings_calculation",
   "BasePath": "_content/Forgings_calculation",
   "Mode": "Default",
@@ -865,6 +865,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
+    },
+    {
+      "Identity": "C:\\Users\\Danil\\source\\repos\\Forgings_calculation\\Forgings_calculation\\wwwroot\\lib\\Images\\Disk_bez_otverstvia.png",
+      "SourceId": "Forgings_calculation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Danil\\source\\repos\\Forgings_calculation\\Forgings_calculation\\wwwroot\\",
+      "BasePath": "_content/Forgings_calculation",
+      "RelativePath": "lib/Images/Disk_bez_otverstvia.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\Images\\Disk_bez_otverstvia.png"
+    },
+    {
+      "Identity": "C:\\Users\\Danil\\source\\repos\\Forgings_calculation\\Forgings_calculation\\wwwroot\\lib\\Images\\Disk_s_otverstviem.png",
+      "SourceId": "Forgings_calculation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Danil\\source\\repos\\Forgings_calculation\\Forgings_calculation\\wwwroot\\",
+      "BasePath": "_content/Forgings_calculation",
+      "RelativePath": "lib/Images/Disk_s_otverstviem.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\Images\\Disk_s_otverstviem.png"
     },
     {
       "Identity": "C:\\Users\\Danil\\source\\repos\\Forgings_calculation\\Forgings_calculation\\wwwroot\\lib\\jquery\\dist\\jquery.js",

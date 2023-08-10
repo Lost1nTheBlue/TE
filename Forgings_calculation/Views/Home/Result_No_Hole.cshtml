@@ -1,0 +1,71 @@
+﻿<h1 class="center">Размеры детали</h1>
+<body>
+    <div>
+        <br />
+        <table border="1" class="center" width="100%">
+            <col style="width:25%">
+            <col style="width:25%">
+            <col style="width:25%">
+            <col style="width:25%">
+            <tr>
+                <th><h3>Высота</h3></th>
+                <th><h3>Диаметр</h3></th>
+                <th><h3>Общая масса без напуска на пробу</h3></th>
+                <th><h3>Общая масса с напуском на пробу</h3></th>
+            </tr>
+            <tr>
+                <td height="60">
+                    <a>Высота заготовки <br /> без напуска на пробу, <br /> мм <br /></a>
+                    @ViewData["Height1"]
+                    &#177; @ViewData["Height1_LS"]
+                </td>
+                <td height="60">
+                    <a>Диаметр заготовки, <br /> мм <br /></a>
+                    @ViewData["Diametr1"]
+                    &#177; @ViewData["Diametr1_LS"]
+                </td>
+                <td height="60">
+                    <a>Масса заготовки <br /> без напуска на пробу, <br /> кг <br /></a>
+                    @ViewData["Weight1"]
+                </td>
+                <td height="60">
+                    <a>Масса заготовки <br /> с напуском на пробу, <br /> кг <br /></a>
+                    @ViewData["Weight1AFC"]
+                </td>
+            </tr>
+            <tr>
+                <td height="60">
+                    <a>Максимальная высота заготовки <br /> с напуском на пробу, <br /> мм <br /></a>
+                    @ViewData["Height2"]
+                </td>
+                <td height="60">
+                    <a>Максимальный диаметр заготовки, <br /> мм <br /></a>
+                    @ViewData["Diametr2"]
+                </td>
+                <td height="60">
+                    <a>Максимальная масса заготовки, <br /> кг <br /></a>
+                    @ViewData["Weight2"]
+                </td>
+                <td height="60">
+                    <a>Максимальная масса заготовки <br /> с напуском на пробу, <br /> кг <br /></a>
+                    @ViewData["Weight2AFC"]
+                </td>
+            </tr>
+        </table>
+        <br />
+
+        <div class="container">
+            <img src="~/lib/Images/Disk_bez_otverstvia.png" alt="Диск с отверстием" style="width:100%;" />
+            <div class="height1">
+                @ViewData["Height1"] &#177; @ViewData["Height1_LS"]
+            </div>
+            <div class="height2">@ViewData["Height2"]</div>
+            <div class="diametr1">
+                @ViewData["Diametr1"] &#177; @ViewData["Diametr1_LS"]
+            </div>
+            <div class="diametr2">
+                @ViewData["Diametr2"]
+            </div>
+        </div>
+    </div>
+</body>

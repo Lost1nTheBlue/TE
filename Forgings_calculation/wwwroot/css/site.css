@@ -96,7 +96,7 @@ footer {
 }
 
 table {
-    width: 300px;
+    width: 1100px;
     margin: auto;
     text-align: center;
     border-collapse: collapse;
@@ -108,4 +108,51 @@ td {
 
 .center {
     text-align: center;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+
+/* Bottom right text */
+.height1 {
+    position: absolute;
+    bottom: 60%;
+    right: 2.3%;
+    transform: rotate(270deg);
+}
+
+.height2 {
+    position: absolute;
+    bottom: 60%;
+    right: 1.4%;
+    transform: rotate(270deg);
+}
+
+/* Centered text */
+.diametr1 {
+    position: absolute;
+    bottom: 13%;
+    left: 42%;
+}
+
+.diametr2 {
+    position: absolute;
+    bottom: 8%;
+    left: 42%;
+}
+
+.hole1 {
+    position: absolute;
+    top: 9%;
+    left: 42%;
+}
+
+.hole2 {
+    position: absolute;
+    top: 14%;
+    left: 42%;
 }

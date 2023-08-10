@@ -8,7 +8,7 @@ namespace Forgings_calculation.Calculaiting
 {
     public class DiametrClass1
     {
-        public int Error_Size(DataModel Data)
+        public int Error_Size(DataModel Data, int heightint)
         {
             DB db = new DB();
 
@@ -16,7 +16,7 @@ namespace Forgings_calculation.Calculaiting
 
             MySqlConnection connection = db.getConnection();
 
-            string height = Data.Height.ToString();
+            string height = heightint.ToString();
             string diametr = Data.Diameter.ToString();
 
             int error;
@@ -44,7 +44,7 @@ namespace Forgings_calculation.Calculaiting
 
         }
 
-        public int Limit_Size(DataModel Data)
+        public int Limit_Size(DataModel Data, int heightint)
         {
             DB db = new DB();
 
@@ -52,7 +52,7 @@ namespace Forgings_calculation.Calculaiting
 
             MySqlConnection connection = db.getConnection();
 
-            string height = Data.Height.ToString();
+            string height = heightint.ToString();
             string diametr = Data.Diameter.ToString();
 
             int limit;

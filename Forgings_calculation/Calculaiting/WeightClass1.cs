@@ -1,5 +1,4 @@
 ﻿using MySql.Data.MySqlClient;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Forgings_calculation.Calculaiting
 {
@@ -22,11 +21,11 @@ namespace Forgings_calculation.Calculaiting
             return Weight_Disc(Height, Diametr) - Weight_Disc(Height, Hole_Diametr);
         }
 
-        public double Weight(int Height, int Diametr, double Hole_Diametr) 
+        public double Weight(int Height, int Diametr, double Hole_Diametr)
         {
             double ratio1 = 0;
 
-            if ((Diametr / Height >= 4) || (Diametr > 1200) || (Weight_Disc_Hole(Height, Diametr, Hole_Diametr)>4000))
+            if ((Diametr / Height >= 4) || (Diametr > 1200) || (Weight_Disc_Hole(Height, Diametr, Hole_Diametr) > 4000))
             {
                 DB db = new DB();
                 db.openConnection();
@@ -49,7 +48,7 @@ namespace Forgings_calculation.Calculaiting
                     ratio1 = Convert.ToDouble(str);
                 }
             }
-            return Weight_Disc_Hole(Height, Diametr, Hole_Diametr) * (1+ratio1);
+            return Weight_Disc_Hole(Height, Diametr, Hole_Diametr) * (1 + ratio1);
         }
 
     }

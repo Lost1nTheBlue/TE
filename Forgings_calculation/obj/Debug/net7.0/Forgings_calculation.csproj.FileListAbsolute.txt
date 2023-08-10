@@ -53,3 +53,4 @@ C:\Users\Danil\source\repos\Forgings_calculation\Forgings_calculation\bin\Debug\
 C:\Users\Danil\source\repos\Forgings_calculation\Forgings_calculation\bin\Debug\net7.0\runtimes\win-x64\native\k5sprt64.dll
 C:\Users\Danil\source\repos\Forgings_calculation\Forgings_calculation\bin\Debug\net7.0\runtimes\win-x64\native\krb5_64.dll
 C:\Users\Danil\source\repos\Forgings_calculation\Forgings_calculation\bin\Debug\net7.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Danil\source\repos\Forgings_calculation\Forgings_calculation\bin\Debug\net7.0\libman.json

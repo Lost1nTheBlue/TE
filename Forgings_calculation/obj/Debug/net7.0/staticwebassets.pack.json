@@ -17,6 +17,14 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "C:\\Users\\Danil\\source\\repos\\Forgings_calculation\\Forgings_calculation\\wwwroot\\lib\\Images\\Disk_bez_otverstvia.png",
+      "PackagePath": "staticwebassets\\lib\\Images\\Disk_bez_otverstvia.png"
+    },
+    {
+      "Id": "C:\\Users\\Danil\\source\\repos\\Forgings_calculation\\Forgings_calculation\\wwwroot\\lib\\Images\\Disk_s_otverstviem.png",
+      "PackagePath": "staticwebassets\\lib\\Images\\Disk_s_otverstviem.png"
+    },
+    {
       "Id": "C:\\Users\\Danil\\source\\repos\\Forgings_calculation\\Forgings_calculation\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
