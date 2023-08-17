@@ -46,26 +46,19 @@ namespace Forgings_calculation.Controllers
                     double weight2;
                     double weight1AFC;
                     double weight2AFC;
-                    /*double weight_wh1;
-                    double weight_wh2;
-                    double weight_disc1;
-                    double weight_disc2;*/
 
                     int hole_diametr1 = 0;
                     int hole_diametr2 = 0;
 
                     if (Data.Hole_Diameter != 0)
                     {
-                        hole_diametr1 = Data.Hole_Diameter - diametrClass1.Error_Size(Data, heightClass.Height_Det(Data)) + Data.Allowance_For_SizeDh;
-                        hole_diametr2 = Data.Hole_Diameter - diametrClass1.Error_Size(Data, heightClass.Height_Det_Prob(Data)) - diametrClass1.Error_Size(Data, heightClass.Height_Det_Prob(Data)) / 3 + Data.Allowance_For_SizeDh;
+                        hole_diametr1 = Data.Hole_Diameter - holeClass1.Error_Size(Data, heightClass.Height_Det(Data)) + Data.Allowance_For_SizeDh;
+                        hole_diametr2 = Data.Hole_Diameter - holeClass1.Error_Size(Data, heightClass.Height_Det_Prob(Data)) - holeClass1.Error_Size(Data, heightClass.Height_Det_Prob(Data)) / 3 + Data.Allowance_For_SizeDh;
                         weight1 = weightClass1.Weight(height1, diametr1, hole_diametr1);
                         weight2 = weightClass1.Weight(height2, diametr2, hole_diametr2);
                         weight1AFC = weightClass1.Weight(height1AFC, diametr1, hole_diametr1);
                         weight2AFC = weightClass1.Weight(height2AFC, diametr2, hole_diametr2);
-                        /*weight_wh1 = weightClass1.Weight_Disc(height1, diametr1);
-                        weight_wh2 = weightClass1.Weight_Disc(height2, diametr2);
-                        weight_disc1 = weightClass1.Weight_Disc_Hole(height1, diametr1, hole_diametr1);
-                        weight_disc2 = weightClass1.Weight_Disc_Hole(height2, diametr2, hole_diametr2);*/
+
                     }
                     else
                     {
@@ -73,15 +66,14 @@ namespace Forgings_calculation.Controllers
                         weight2 = weightClass1.Weight_Disc(height2, diametr2);
                         weight1AFC = weightClass1.Weight_Disc(height1AFC, diametr1);
                         weight2AFC = weightClass1.Weight_Disc(height2AFC, diametr2);
-                        /*weight_wh1 = weight1;
-                        weight_wh2 = weight2;
-                        weight_disc1 = weight1;
-                        weight_disc2 = weight2;*/
+
                     }
 
                     ViewData["Height1"] = height1;
                     ViewData["Height1_LS"] = diametrClass1.Limit_Size(Data, heightClass.Height_Det(Data));
-                    ViewData["Height2"] = height2;
+                    ViewData["Height1AFC"] = height1AFC;
+                    ViewData["Height1AFC_LS"] = diametrClass1.Limit_Size(Data, heightClass.Height_Det_Prob(Data));
+                    ViewData["Height2AFC"] = height2AFC;
                     ViewData["Diametr1"] = diametr1;
                     ViewData["Diametr1_LS"] = diametrClass1.Limit_Size(Data, heightClass.Height_Det(Data));
                     ViewData["Diametr2"] = diametr2;
@@ -89,12 +81,8 @@ namespace Forgings_calculation.Controllers
                     ViewData["Weight2"] = Math.Round(weight2, 2, MidpointRounding.AwayFromZero);
                     ViewData["Weight1AFC"] = Math.Round(weight1AFC, 2, MidpointRounding.AwayFromZero);
                     ViewData["Weight2AFC"] = Math.Round(weight2AFC, 2, MidpointRounding.AwayFromZero);
-                    /*ViewData["Weight_wh1"] = Math.Round(weight_wh1, 2, MidpointRounding.AwayFromZero);
-                    ViewData["Weight_wh2"] = Math.Round(weight_wh2, 2, MidpointRounding.AwayFromZero);
-                    ViewData["Weight_Disc1"] = Math.Round(weight_disc1, 2, MidpointRounding.AwayFromZero);
-                    ViewData["Weight_Disc2"] = Math.Round(weight_disc2, 2, MidpointRounding.AwayFromZero);*/
                     ViewData["DiametrHole1"] = hole_diametr1;
-                    ViewData["DiametrHole1_LS"] = diametrClass1.Error_Size(Data, heightClass.Height_Det_Prob(Data)) / 3;
+                    ViewData["DiametrHole1_LS"] = holeClass1.Error_Size(Data, heightClass.Height_Det(Data)) / 3;
                     ViewData["DiametrHole2"] = hole_diametr2;
                 }
 
@@ -118,10 +106,7 @@ namespace Forgings_calculation.Controllers
                     double weight2;
                     double weight1AFC;
                     double weight2AFC;
-                    /*double weight_wh1;
-                    double weight_wh2;
-                    double weight_disc1;
-                    double weight_disc2;*/
+
 
                     int hole_diametr1 = 0;
                     double hole_diametr2 = 0;
@@ -134,10 +119,6 @@ namespace Forgings_calculation.Controllers
                         weight2 = weightClass1.Weight(height2, diametr2, hole_diametr2);
                         weight1AFC = weightClass1.Weight(height1AFC, diametr1, hole_diametr1);
                         weight2AFC = weightClass1.Weight(height2AFC, diametr2, hole_diametr2);
-                        /*weight_wh1 = weightClass1.Weight_Disc(height1, diametr1);
-                        weight_wh2 = weightClass1.Weight_Disc(height2, diametr2);
-                        weight_disc1 = weightClass1.Weight_Disc_Hole(height1, diametr1, hole_diametr1);
-                        weight_disc2 = weightClass1.Weight_Disc_Hole(height2, diametr2, hole_diametr2);*/
                     }
                     else
                     {
@@ -145,15 +126,13 @@ namespace Forgings_calculation.Controllers
                         weight2 = weightClass1.Weight_Disc(height2, diametr2);
                         weight1AFC = weightClass1.Weight_Disc(height1AFC, diametr1);
                         weight2AFC = weightClass1.Weight_Disc(height2AFC, diametr2);
-                        /*weight_wh1 = weight1;
-                        weight_wh2 = weight2;
-                        weight_disc1 = weight1;
-                        weight_disc2 = weight2;*/
                     }
 
                     ViewData["Height1"] = height1;
                     ViewData["Height1_LS"] = diametrClass1.Limit_Size(Data, heightClass.Height_Det(Data));
-                    ViewData["Height2"] = height2;
+                    ViewData["Height2AFC"] = height2AFC;
+                    ViewData["Height1AFC"] = height1AFC;
+                    ViewData["Height1AFC_LS"] = diametrClass1.Limit_Size(Data, heightClass.Height_Det_Prob(Data));
                     ViewData["Diametr1_LS"] = diametrClass1.Limit_Size(Data, heightClass.Height_Det(Data));
                     ViewData["Diametr1"] = diametr1;
                     ViewData["Diametr2"] = diametr2;
@@ -161,10 +140,6 @@ namespace Forgings_calculation.Controllers
                     ViewData["Weight2"] = Math.Round(weight2, 2, MidpointRounding.AwayFromZero);
                     ViewData["Weight1AFC"] = Math.Round(weight1AFC, 2, MidpointRounding.AwayFromZero);
                     ViewData["Weight2AFC"] = Math.Round(weight2AFC, 2, MidpointRounding.AwayFromZero);
-                    /*ViewData["Weight_wh1"] = Math.Round(weight_wh1, 2, MidpointRounding.AwayFromZero);
-                    ViewData["Weight_wh2"] = Math.Round(weight_wh2, 2, MidpointRounding.AwayFromZero);
-                    ViewData["Weight_Disc1"] = Math.Round(weight_disc1, 2, MidpointRounding.AwayFromZero);
-                    ViewData["Weight_Disc2"] = Math.Round(weight_disc2, 2, MidpointRounding.AwayFromZero);*/
                     ViewData["DiametrHole1"] = hole_diametr1;
                     ViewData["DiametrHole1_LS"] = diametrHoleClass2.Pripusk(hole_diametr1, Data.Hole_Diameter);
                     ViewData["DiametrHole2"] = hole_diametr2;

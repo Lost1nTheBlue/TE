@@ -33,15 +33,15 @@ namespace Forgings_calculation.Models
         [Required(ErrorMessage = "Вам нужно ввести напуск на пробу")]
         public int Allowance_For_Content { get; set; }
 
-        [Display(Name = "Введите напуск на размер")]
+        [Display(Name = "Введите напуск на размер высоты")]
         [Required(ErrorMessage = "Вам нужно ввести напуск на размер")]
         public int Allowance_For_SizeH { get; set; }
 
-        [Display(Name = "Введите напуск на размер")]
+        [Display(Name = "Введите напуск на размер диаметра")]
         [Required(ErrorMessage = "Вам нужно ввести напуск на размер")]
         public int Allowance_For_SizeD { get; set; }
 
-        [Display(Name = "Введите напуск на размер")]
+        [Display(Name = "Введите напуск на размер диаметра отверстия")]
         [Required(ErrorMessage = "Вам нужно ввести напуск на размер")]
         public int Allowance_For_SizeDh { get; set; }
     }

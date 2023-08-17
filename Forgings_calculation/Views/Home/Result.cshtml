@@ -49,7 +49,7 @@
             <tr>
                 <td height="60">
                     <a>Максимальная высота заготовки <br /> с напуском на пробу, <br /> мм <br /></a>
-                    @ViewData["Height2"]
+                    @ViewData["Height2AFC"]
                 </td>
                 <td height="60">
                     <a>Максимальный диаметр заготовки, <br /> мм <br /></a>
@@ -76,19 +76,21 @@
             <div class="height1">
                 @ViewData["Height1"] &#177; @ViewData["Height1_LS"]
             </div>
-            <div class="height2">@ViewData["Height2"]</div>
+            <div class="height2">
+                @ViewData["Height1AFC"] &#177; @ViewData["Height1AFC_LS"]
+            </div>
             <div class="diametr1">
                 @ViewData["Diametr1"] &#177; @ViewData["Diametr1_LS"]
             </div>
-            <div class="diametr2">
+            <!--<div class="diametr2">
                 @ViewData["Diametr2"]
-            </div>
+            </div>-->
             <div class="hole1">
                 @ViewData["DiametrHole1"] &#177; @ViewData["DiametrHole1_LS"]
             </div>
-            <div class="hole2">
+            <!--<div class="hole2">
                 @ViewData["DiametrHole2"]
-            </div>
+            </div>-->
         </div>
     </div>
 </body>
